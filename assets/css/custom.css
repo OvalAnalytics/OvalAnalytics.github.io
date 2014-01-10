@@ -1,0 +1,132 @@
+/* Add all your custom styles to this stylesheet. Don't edit "styles.less" or "styles.css", as it will be overridden by future updates.
+-------------------------*/
+
+/* Navbar */
+.dropdown2  {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.navbar > .container .navbar-brand {
+  margin: 4px;
+  width: 85%;
+  height: auto;
+}
+
+.navbar > .container .navbar-brand:hover {
+  margin-top: 4px;
+}
+
+/* Carousel */
+.carousel-header {
+  padding: 2px 0;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+}
+
+.container {
+  width: 70%;
+}
+
+.tradeimage img{
+  display: inline-block;
+    width: 50%;
+    height: auto;
+    margin: 0 4em;
+}
+
+/* Footer */
+
+#footer {
+  color: #FFFFFF;
+  background: #4A4A4A;
+}
+
+#footer .footer-top {
+  padding-top: 2em;
+}
+
+.social-networks{
+  padding-bottom: 2em;
+}
+
+.social-networks a:hover i,
+.social-networks-transparent a:hover i {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity:0.7;
+  filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+}
+
+.footer-quote {
+  color: #FFFFFF;
+}
+
+/* Other Landing page */
+.spaced {
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  text-transform: uppercase;
+}
+
+.carousel-content .mybody {
+  margin-top: 2.33em;
+}
+
+.carousel-content .mybody2 {
+    margin-left: 3em;
+    margin-top: 2em
+}
+
+.container .bigfont {
+  font-size: 1.15em;
+  line-height: 1.5;
+  color: #4c4f4d;
+}
+
+i.icon-big {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 2.5em;
+}
+
+.iconbox .header {
+  font-size: 1.5em;
+}
+
+/* Page Top */
+.page-top {
+  background: #778899;
+  border-bottom: solid 1px #666666;
+}
