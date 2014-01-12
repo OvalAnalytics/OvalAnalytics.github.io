@@ -5,15 +5,16 @@
 .dropdown2  {
   position: relative;
   top: 0px;
-  left: 5px;
+  left: 0;
   font-size: 16px;
   padding-top: 15px;
 }
 
 .navbar > .container .navbar-brand {
-  margin: 4px;
+  margin: 6px;
   width: 85%;
   height: auto;
+  float: left;
 }
 
 .navbar > .container .navbar-brand:hover {
@@ -94,8 +95,11 @@
 
 /* Other Landing page */
 .spaced {
+  display: block;
   margin-top: 2em;
   margin-bottom: 0.8em;
+  margin-right: auto;
+  margin-left: auto;
   text-transform: uppercase;
 }
 
