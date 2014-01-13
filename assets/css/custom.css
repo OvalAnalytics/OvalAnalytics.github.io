@@ -112,7 +112,16 @@
 /* Other Landing page */
 .spaced {
   display: block;
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom: 0.8em;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.spaced1 {
+  display: block;
+  margin-top: -2em;
   margin-bottom: 0.8em;
   margin-right: auto;
   margin-left: auto;
