@@ -1,0 +1,188 @@
+/* Normalize */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, legend {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 { font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 100%; }
+address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+caption,th { text-align: left; }
+/* @end */
+
+#map {
+  width: 960px;
+  margin: 0 auto;
+  pointer-events: all;
+  /* background-color: #C6DEF6; */
+  z-index: -1;
+}
+
+.land {
+  fill: #E5D9C9;
+}
+
+.border {
+  fill: none;
+  stroke: #E5D9C9;
+  stroke-opacity: 0.1;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+}
+
+.route {
+  fill: none;
+  stroke: #363330;
+  stroke-width: .5;
+  stroke-linecap: round;
+}
+
+.bubble {
+  fill: none;
+  fill-opacity: .7;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-opacity: .3;
+}
+
+.bar {
+  fill: #ee4000;
+  fill-opacity: 0.8;
+}
+
+.predictbar {
+  fill: #333;
+  fill-opacity: 0.5;
+}
+
+.predictlabel {
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.barlabel {
+  font-size: 10px;
+  fill: #696969;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.yearlabel {
+  font-size: 10px;
+  fill: #696969;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.kpilabel {
+  font-size: 56px;
+  fill: #DE001C;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.legend circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.legend text {
+  fill: #777;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+#tooltip {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+}
+
+#number {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: #ee4000;
+}
+
+
+#years {
+  margin-top: 10px;
+  font-family: "Helvetica Neue", Helvetica, serif;
+  font-size: 13px;
+  text-align: left;
+}
+
+
+#metrics { width: 920px; margin-bottom: -100; font-family: Helvetica, sans-serif; }
+#metrics #instruct {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+    float: left;
+    width: 210px;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: Georgia, serif;
+}
+#metrics h3 { font-size: 13px; font-family: Helvetica, sans-serif; text-align: center; margin-bottom: 0; }
+#metrics ul { font-size: 12px; font-family: Helvetica, sans-serif; margin-left: 0; padding: 0; }
+#metrics ul li {
+    list-style: none;
+    margin: 10px 10px 0 0;
+    padding: 4px 0;
+    display: inline-block;
+    width: 108px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 11px;
+    border: 1px solid #e0e0e0;
+}
+#metrics ul li.bottom { margin-bottom: 0; }
+#metrics #deathreason { width: 650px; float: left; margin-right: 20px; }
+#metrics .block-button { width: 80px; display: block; float:left; clear:both; }
+
+/* red #DE001C */
+/* path.All, #metrics ul li.selected.All, .tooltip .All { fill: #ee4000; background: #ee4000; }
+path.Suicide, #metrics ul li.selected.Suicide, .tooltip .Suicide { fill: #1f77b4; background: #1f77b4; }
+path.CardiacArrest, #metrics ul li.selected.CardiacArrest, .tooltip .CardiacArrest { fill: #9c7c76; background: #9c7c76; }
+path.TrafficAccident, #metrics ul li.selected.TrafficAccident, .tooltip .TrafficAccident { fill: #62938b; background: #62938b; }
+path.NaturalDeath, #metrics ul li.selected.NaturalDeath, .tooltip .NaturalDeath { fill: #794044; background: #794044; }
+path.HeartAttack, #metrics ul li.selected.HeartAttack, .tooltip .HeartAttack { fill: #7b4173; background: #7b4173; }
+path.Murder, #metrics ul li.selected.Murder, .tooltip .Murder { fill: #d6616b; background: #d6616b; }
+path.WorkplaceAccident, #metrics ul li.selected.WorkplaceAccident, .tooltip .WorkplaceAccident { fill: #ca904e; background: #ca904e; }
+path.Other, #metrics ul li.selected.Other, .tooltip .Other { fill: #726c64; background: #726c64; } */
+
+path, #metrics ul li.selected { color: white;  text-rendering: optimizeLegibility; }
+path, #metrics ul li.selected { fill: #6f6c67;  background: #6f6c67; }
+path.NODATA { fill: #fff; }
+
+.clr { clear: both; }
+
+.footnote {
+  font-size: 13px;
+  color: #777;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.about {
+  font-family: "Helvetica Neue", Helvetica, serif;
+  font-size: 13px;
+  color: #333;
+  margin-left: 50px;
+}

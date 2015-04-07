@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Death Toll of Nepalese Migrant Workers</title>
+
+    <!-- Mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+</head>
+
+<div id="map">
+    <div id="metrics">
+        <div id="instruct"><em>Select a button on the left to view corresponding numbers. Hover over the bubbles for statistics on that country.</em></div>
+        <div id="deathreason">
+            <h3>Reason for Death</h3>
+            <ul>
+            <li data-metric="Country" class="selected All">All Deaths</li>
+            <li data-metric="Suicide" class="Suicide">Suicide</li>
+            <li data-metric="HeartAttack" class="HeartAttack">Heart Attack</li>
+            <li data-metric="CardiacArrest" class="CardiacArrest">Cardiac Arrest</li>
+            <li data-metric="TrafficAccident" class="TrafficAccident">Traffic Accident</li>
+            <li data-metric="NaturalDeath" class="NaturalDeath">Natural Death</li>
+            <li data-metric="Murder" class="Murder">Murder</li>
+            <li data-metric="WorkplaceAccident" class="WorkplaceAccident">Workplace Accident</li>
+            <li data-metric="Other" class="Other">Other Death</li>
+            </ul>
+        </div>
+
+        <div id="tooltip" class="hidden">
+            <p><span id="number"></span></p>
+            <p><span id="text"></span></p>
+            <strong id="name"></strong>
+            <div id="years">
+                <p><h5>Five Year Trend</h5></p>
+                <p><span id="period1"></span><span><strong class="num1"></strong></span></p>
+                <p><span id="period2"></span><span><strong class="num2"></strong></span></p>
+                <p><span id="period3"></span><span><strong class="num3"></strong></span></p>
+                <p><span id="period4"></span><span><strong class="num4"></strong></span></p>
+                <p><span id="period5"></span><span><strong class="num5"></strong></span></p>
+            </div>
+        </div>
+
+        <script type ="text/javascript" src ="js/mig123.js"></script>
+
+        <div class="clr"></div>
+    </div><!-- @end #metrics -->
+
+    <p class = "footnote">All periods are from start of Shrawan to end of Asar of next year.<br \>
+    * The last period is incomplete and from Shrawan 2071 to end of Falgun 2071.<br />
+    ** Countries with less than five deaths in total are not shown in map.</p><br />
+    <p class="about">Created by, <a href="http://ovalanalytics.com/"> Oval Analytics Pvt. Ltd.</a><br \>
+    Data Source: Department of Immigration, Nepal.
+    </p>
+</div>
+</html>
