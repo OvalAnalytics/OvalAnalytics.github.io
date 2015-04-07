@@ -156,17 +156,6 @@ caption,th { text-align: left; }
 #metrics #deathreason { width: 650px; float: left; margin-right: 20px; }
 #metrics .block-button { width: 80px; display: block; float:left; clear:both; }
 
-/* red #DE001C */
-/* path.All, #metrics ul li.selected.All, .tooltip .All { fill: #ee4000; background: #ee4000; }
-path.Suicide, #metrics ul li.selected.Suicide, .tooltip .Suicide { fill: #1f77b4; background: #1f77b4; }
-path.CardiacArrest, #metrics ul li.selected.CardiacArrest, .tooltip .CardiacArrest { fill: #9c7c76; background: #9c7c76; }
-path.TrafficAccident, #metrics ul li.selected.TrafficAccident, .tooltip .TrafficAccident { fill: #62938b; background: #62938b; }
-path.NaturalDeath, #metrics ul li.selected.NaturalDeath, .tooltip .NaturalDeath { fill: #794044; background: #794044; }
-path.HeartAttack, #metrics ul li.selected.HeartAttack, .tooltip .HeartAttack { fill: #7b4173; background: #7b4173; }
-path.Murder, #metrics ul li.selected.Murder, .tooltip .Murder { fill: #d6616b; background: #d6616b; }
-path.WorkplaceAccident, #metrics ul li.selected.WorkplaceAccident, .tooltip .WorkplaceAccident { fill: #ca904e; background: #ca904e; }
-path.Other, #metrics ul li.selected.Other, .tooltip .Other { fill: #726c64; background: #726c64; } */
-
 path, #metrics ul li.selected { color: white;  text-rendering: optimizeLegibility; }
 path, #metrics ul li.selected { fill: #6f6c67;  background: #6f6c67; }
 path.NODATA { fill: #fff; }
